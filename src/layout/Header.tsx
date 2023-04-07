@@ -1,13 +1,16 @@
+import GithubIcon from '@/components/icons/GithubIcon';
 import Link from 'next/link';
 
 const Header = () => {
 	return (
-		<header className='h-28 px-8 flex justify-between items-center'>
-			<h1 className='head'>Logo</h1>
+		<header className='h-20 flex justify-between items-center'>
+			<Link href='/'>
+				<h1 className='head'>Next .</h1>
+			</Link>
 			<nav className='flex items-center gap-4'>
-				<Link href='/'>Link</Link>
-				<Link href='/'>Link</Link>
-				<Link href='/'>Link</Link>
+				<Link href='https://zipy.live/snowin/github' target='_blank'>
+					<GithubIcon />
+				</Link>
 			</nav>
 		</header>
 	);
